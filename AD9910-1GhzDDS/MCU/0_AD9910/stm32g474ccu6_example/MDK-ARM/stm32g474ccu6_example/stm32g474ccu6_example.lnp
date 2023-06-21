@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"stm32g474ccu6_example\startup_stm32g474xx.o"
+"stm32g474ccu6_example\main.o"
+"stm32g474ccu6_example\gpio.o"
+"stm32g474ccu6_example\stm32g4xx_it.o"
+"stm32g474ccu6_example\stm32g4xx_hal_msp.o"
+"stm32g474ccu6_example\stm32g4xx_hal_tim.o"
+"stm32g474ccu6_example\stm32g4xx_hal_tim_ex.o"
+"stm32g474ccu6_example\stm32g4xx_hal_pwr_ex.o"
+"stm32g474ccu6_example\stm32g4xx_hal.o"
+"stm32g474ccu6_example\stm32g4xx_hal_rcc.o"
+"stm32g474ccu6_example\stm32g4xx_hal_rcc_ex.o"
+"stm32g474ccu6_example\stm32g4xx_hal_flash.o"
+"stm32g474ccu6_example\stm32g4xx_hal_flash_ex.o"
+"stm32g474ccu6_example\stm32g4xx_hal_flash_ramfunc.o"
+"stm32g474ccu6_example\stm32g4xx_hal_gpio.o"
+"stm32g474ccu6_example\stm32g4xx_hal_exti.o"
+"stm32g474ccu6_example\stm32g4xx_hal_dma.o"
+"stm32g474ccu6_example\stm32g4xx_hal_dma_ex.o"
+"stm32g474ccu6_example\stm32g4xx_hal_pwr.o"
+"stm32g474ccu6_example\stm32g4xx_hal_cortex.o"
+"stm32g474ccu6_example\system_stm32g4xx.o"
+"stm32g474ccu6_example\ad9910v1.o"
+--strict --scatter "stm32g474ccu6_example\stm32g474ccu6_example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stm32g474ccu6_example.map" -o stm32g474ccu6_example\stm32g474ccu6_example.axf
